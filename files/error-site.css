@@ -43,7 +43,7 @@ body {
 .status-code {
     margin: 0 0 0.75rem;
     color: #ffcb05;
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
     font-weight: 600;
     letter-spacing: 0.12em;
     text-transform: uppercase;
@@ -52,7 +52,7 @@ body {
 h1 {
     margin: 0 0 1.25rem;
     color: #ffcb05;
-    font-size: clamp(2.25rem, 5vw, 2.625rem);
+    font-size: clamp(1.75rem, 4vw, 2.125rem);
     font-weight: 600;
     line-height: 1.15;
     letter-spacing: -0.02em;
@@ -61,7 +61,7 @@ h1 {
 p {
     max-width: 40rem;
     margin: 0.625rem 0;
-    font-size: 1.0625rem;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 1.65;
 }
@@ -74,7 +74,7 @@ p {
     border-radius: 0.2rem;
     background: transparent;
     color: #ffcb05;
-    font-size: 0.9375rem;
+    font-size: 0.875rem;
     font-weight: 600;
     text-decoration: none;
 }
@@ -104,3 +104,4 @@ p {
         padding-top: 1.5rem;
     }
 }
+
