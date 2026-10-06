@@ -1,16 +1,21 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<title>ERROR 500</title>
-<link rel="stylesheet" href="files/error-site.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>500 — Server error</title>
+    <link rel="stylesheet" href="/files/error-site.css">
 </head>
 <body>
-    <div class="banner">
-        <img src="files/army-logo.png" width="300px" height="113px" alt="U.S. Army Logo">
-    <div>
-        <h1>Error 500
-            <br>
-        </h1>
-    </div>
-</div>
+    <main class="error-page">
+        <img class="brand" src="/files/army-logo.png" width="300" height="113" alt="U.S. Army">
+        <section class="error-content" aria-labelledby="error-title">
+            <p class="status-code">Error 500</p>
+            <h1 id="error-title">Something went wrong</h1>
+            <p>The server encountered an unexpected error and could not complete your request.</p>
+            <p>Try again in a few minutes. If the problem continues, contact your system administrator.</p>
+            <a class="button" href="/">Return to the home page</a>
+        </section>
+    </main>
 </body>
 </html>

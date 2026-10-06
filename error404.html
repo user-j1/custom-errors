@@ -1,17 +1,21 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<title>ERROR 404</title>
-<link rel="stylesheet" href="files/error-site.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>404 — Page not found</title>
+    <link rel="stylesheet" href="/files/error-site.css">
 </head>
 <body>
-    <div class="banner">
-        <img src="files/army-logo.png" width="300px" height="113px" alt="U.S. Army Logo">
-    <div>
-        <h1>Error 404
-            <br>
-            The server cannot find the requested resource
-        </h1>
-    </div>
-</div>
+    <main class="error-page">
+        <img class="brand" src="/files/army-logo.png" width="300" height="113" alt="U.S. Army">
+        <section class="error-content" aria-labelledby="error-title">
+            <p class="status-code">Error 404</p>
+            <h1 id="error-title">Page not found</h1>
+            <p>We could not find the page you requested.</p>
+            <p>Check the address for typing errors, or return to the home page.</p>
+            <a class="button" href="/">Return to the home page</a>
+        </section>
+    </main>
 </body>
 </html>
