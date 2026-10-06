@@ -1,6 +1,6 @@
 :root {
     color-scheme: dark;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
 }
 
 * {
@@ -17,61 +17,71 @@ body {
 .error-page {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: flex-start;
+    width: min(100%, 72rem);
     min-height: 100vh;
-    padding: 3rem 1.5rem;
-    text-align: center;
+    margin: 0 auto;
+    padding: clamp(2rem, 7vw, 6rem);
+    text-align: left;
 }
 
 .brand {
     display: block;
-    width: min(300px, 80vw);
+    width: min(240px, 70vw);
     height: auto;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .error-content {
-    max-width: 42rem;
+    width: 100%;
+    max-width: 44rem;
+    padding-top: 2rem;
+    border-top: 2px solid #ffcb05;
 }
 
 .status-code {
-    margin: 0 0 0.5rem;
+    margin: 0 0 0.75rem;
     color: #ffcb05;
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 0.875rem;
+    font-weight: 600;
     letter-spacing: 0.12em;
     text-transform: uppercase;
 }
 
 h1 {
-    margin: 0 0 1rem;
+    margin: 0 0 1.25rem;
     color: #ffcb05;
-    font-size: clamp(2rem, 7vw, 3.5rem);
-    line-height: 1.1;
+    font-size: clamp(2.25rem, 5vw, 2.625rem);
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
 }
 
 p {
-    margin: 0.75rem 0;
-    font-size: 1.125rem;
-    line-height: 1.6;
+    max-width: 40rem;
+    margin: 0.625rem 0;
+    font-size: 1.0625rem;
+    font-weight: 400;
+    line-height: 1.65;
 }
 
 .button {
     display: inline-block;
     margin-top: 1.5rem;
-    padding: 0.8rem 1.2rem;
-    border: 2px solid #ffcb05;
-    border-radius: 0.25rem;
-    background: #ffcb05;
-    color: #000;
-    font-weight: 700;
+    padding: 0.7rem 1rem;
+    border: 1px solid #ffcb05;
+    border-radius: 0.2rem;
+    background: transparent;
+    color: #ffcb05;
+    font-size: 0.9375rem;
+    font-weight: 600;
     text-decoration: none;
 }
 
 .button:hover {
-    background: #ffe16b;
-    border-color: #ffe16b;
+    background: #ffcb05;
+    color: #000;
 }
 
 .button:focus-visible {
@@ -81,10 +91,16 @@ p {
 
 @media (max-width: 30rem) {
     .error-page {
-        padding-block: 2rem;
+        justify-content: flex-start;
+        padding: 2rem 1.25rem;
     }
 
     .brand {
-        margin-bottom: 2rem;
+        width: min(210px, 70vw);
+        margin-bottom: 1.5rem;
+    }
+
+    .error-content {
+        padding-top: 1.5rem;
     }
 }
